@@ -33,7 +33,7 @@ const CheckOut = () => {
         }handlerequest();
     }catch(error){
       toast.error(error.status)
-    }},[])
+    }},[token,id])
 async function handleOrderRequest(event){
   try{
       event.preventDefault();

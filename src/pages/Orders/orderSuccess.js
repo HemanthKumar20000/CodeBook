@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { useCartContext } from "../../context/CartContext"
-import { useEffect } from "react";
+
 import UseTitle from "../../hooks/UseTitle";
 export const OrderSuccess = ({data}) => {
     UseTitle("Orders")

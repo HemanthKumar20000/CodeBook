@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useSyncExternalStore } from "react";
+import React, { useEffect, useState } from "react";
 import { FilterBar, ProductCard } from "../../components";
-import { useLocation, useSearchParams } from "react-router-dom";
+import {  useSearchParams } from "react-router-dom";
 import { useFilterContext } from "../../context/FilterContext";
 import UseTitle from "../../hooks/UseTitle";
 import { toast } from "react-toastify";

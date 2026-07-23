@@ -22,7 +22,7 @@ const Productdetails = () => {
     }}
     
     fetchData();
-  }, []);
+  }, [url]);
 
   return (
     <main>

@@ -13,19 +13,23 @@ const ProductList = () => {
   const [show, setShow] = useState(false);
   const url = `${process.env.REACT_APP_HOST}products?name_like=${search ? search : ""}`;
   useEffect(() => {
-    async function fetchData() {
-      try{
+  async function fetchData() {
+    try {
       const response = await fetch(url);
-      if(!response.ok){
-        throw new Error("Login failed");
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch products");
       }
+
       const d = await response.json();
       initialProduct(d);
-    }catch(error){
-      toast.error(error.status)
-    }}
-    fetchData();
-  }, [url]);
+    } catch (error) {
+      toast.error(error.message);
+    }
+  }
+
+  fetchData();
+}, [url, initialProduct]);
   return (
     <div>
       <div className="flex justify-between">

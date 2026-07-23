@@ -1,0 +1,6 @@
+export {default as HomePage} from './Home/HomePage'
+export {default as ProductList} from './products/ProductList'
+export {default as Cart} from './Cart/Cart'
+export {default as Productdetails} from './products/Productdetails'
+export {default as Registration} from './Registration'
+export {default as Login} from './Login'

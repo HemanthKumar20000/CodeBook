@@ -1,0 +1,11 @@
+export { default as Hero } from "./Hero";
+export { Testimonials } from "./Testimonials";
+export { default as FeaturedProducts } from "./FeaturedProducts";
+export { default as FAQ } from "./FAQ";
+export { default as Accordion } from "./Accordion";
+export { default as ProductCard } from "./ProductCard";
+export { FilterBar } from "./FilterBar";
+export { default as ScrollToTop } from "./ScrollToTop";
+export { default as SearchBar } from "./SearchBar";
+export { default as DropDownLogIn } from "./DropDownLogIn";
+export { default as DropDownLogOut } from "./DropDownLogOut";

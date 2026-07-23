@@ -8,7 +8,7 @@ import {
   Registration,
   Login,
 } from "../pages/index";
-import OrderPage from "../pages/Orders/orderPage";
+import OrderPage from "../pages/Orders/OrderPage";
 import ProtectedRoutes from "./ProtectedRoutes";
 import Dash from "../pages/Dashboard/dash"
 import PageNotFound from "../pages/PageNotFound";

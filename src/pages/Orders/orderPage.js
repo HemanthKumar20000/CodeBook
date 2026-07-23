@@ -3,7 +3,8 @@ import { OrderSuccess } from "./orderSuccess";
 import UseTitle from "../../hooks/UseTitle";
 import { toast } from "react-toastify";
 
-const orderPage = () => {
+
+const OrderPage = () => {
   UseTitle("Orders")
   const token = sessionStorage.getItem("token");
   const [data, setData] = useState([]);
@@ -44,4 +45,4 @@ const orderPage = () => {
   );
 };
 
-export default orderPage;
+export default OrderPage;

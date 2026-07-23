@@ -12,7 +12,7 @@ export const CartReducers =(state,action)=>{
     total: 0,
   };
         default:
-           throw new Error(error)
+           return {...state}
             
     }
 }

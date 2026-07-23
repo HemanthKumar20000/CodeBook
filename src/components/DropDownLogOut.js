@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useCartContext } from "../context/CartContext";
 const DropDownLogOut = ({ dropdown, setDropdown }) => {
-  const {CartList}=useCartContext();
+  
   const logout = () => {
     sessionStorage.removeItem("token");
     sessionStorage.removeItem("email");
-    CartList=[];
+    
   };
   const em = sessionStorage.getItem("email");
   return (

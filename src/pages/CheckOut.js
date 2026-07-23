@@ -24,7 +24,7 @@ const CheckOut = () => {
                 
             })
             if(!response.ok){
-               throw {message:response.status,status:response.statusText}
+               throw new Error("Login failed");
             }
             const d=await response.json();
             console.log(d)
@@ -54,7 +54,7 @@ async function handleOrderRequest(event){
         body:JSON.stringify(orders)
     })
     if(!response.ok){
-       throw {message:response.status,status:response.statusText}
+       throw new Error("Login failed");
     }
     navigate("/ordersummary");
 }catch(error){

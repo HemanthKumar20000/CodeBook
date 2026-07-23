@@ -20,7 +20,7 @@ const Login = () => {
                 body:JSON.stringify(details)
             })
             if (!response.ok){
-                 throw {message:response.status,status:response.statusText}
+                 throw new Error("Login failed");
             }
             const data=await response.json();
             console.log(data)

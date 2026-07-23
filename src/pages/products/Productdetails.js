@@ -13,7 +13,7 @@ const Productdetails = () => {
       try{
       const response = await fetch(url);
       if (!response.ok){
-         throw {message:response.status,status:response.statusText}
+         throw new Error("Login failed");
       }
       const d = await response.json();
       setProduct(d);
